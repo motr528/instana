@@ -12,9 +12,8 @@ user's system.
 
 ## Setup
 
-1. **Clone the repository**:
+1. **Open terminal and switch to the project's directory**:
    ```sh
-   git clone https://github.com/your-repo/instana-tracer.git
    cd instana-master
 
 2. **Build the project (or use maven wrapper)**:
@@ -26,7 +25,7 @@ user's system.
    To run the project, put input files in the project's source directory (comma-separated values related to the
    project's directory), use the following command:
    ```sh
-   java -cp target/instana.jar InstanaTracer input1.txt,input2.txt
+   java -cp target/instana.jar InstanaTracer input.txt
 
 4. **(OPTIONAL) Running the Project in Intellij IDEA**
 

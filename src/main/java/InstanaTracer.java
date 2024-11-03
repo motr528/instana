@@ -18,14 +18,14 @@ public class InstanaTracer {
      */
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.println("Usage: java InstanaTracer <input-file-paths>");
+            System.out.println("Usage: java -cp target/instana.jar InstanaTracer <input-file-paths>");
             return;
         }
 
         String[] inputFilePaths = args[0].split(",");
-        InstanaTracer tracer = new InstanaTracer();
 
         for (String inputFilePath : inputFilePaths) {
+            InstanaTracer tracer = new InstanaTracer();
             System.out.println("Processing file: " + inputFilePath);
             tracer.readGraphFromFile(inputFilePath.trim());
 
