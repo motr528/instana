@@ -12,9 +12,10 @@ user's system.
 
 ## Setup
 
-1. **Open terminal and switch to the project's directory**:
+1. **Clone repo from GitHub and switch to the project's repo**:
    ```sh
-   cd instana-master
+   git clone https://github.com/motr528/instana.git
+   cd instana
 
 2. **Build the project (or use maven wrapper)**:
    ```sh
