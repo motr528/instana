@@ -14,11 +14,16 @@ The InstanaTracer project is a Java application designed to calculate trace late
    ```sh
    git clone https://github.com/your-repo/instana-tracer.git
    cd instana-tracer
-
-2. **Running the Project
-   To run the project with a list of input files (comma-separated), use the following command:**:
+   
+2. **Build the project**:
    ```sh
-   java -cp target/instana-tracer-1.0-SNAPSHOT.jar InstanaTracer input1.txt,input2.txt
+   ./mvnw clean install
+
+2. **Running the Project**
+
+   To run the project with a list of input files (comma-separated), use the following command:
+   ```sh
+   java -cp target/instana.jar InstanaTracer input1.txt,input2.txt
    
 
    
