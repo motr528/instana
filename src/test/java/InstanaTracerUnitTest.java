@@ -223,7 +223,6 @@ class InstanaTracerUnitTest {
         tracer.readGraphFromFile("src/test/resources/" + fileName);
         String expected = shortestCycleLength();
         String actual = tracer.shortestLatency("B", "B");
-        System.out.println("Expected: " + expected + " Actual: " + actual);
         assertThat(actual).isEqualTo(expected);
     }
 
