@@ -2,7 +2,9 @@
 
 ## Overview
 
-The InstanaTracer project is a Java application designed to calculate trace latencies and perform various graph-related tasks. This project includes a Maven wrapper to ensure it can be built without requiring Maven to be installed on the user's system.
+The InstanaTracer project is a Java application designed to calculate trace latencies and perform various graph-related
+tasks. This project includes a Maven wrapper to ensure it can be built without requiring Maven to be installed on the
+user's system.
 
 ## Prerequisites
 
@@ -13,17 +15,23 @@ The InstanaTracer project is a Java application designed to calculate trace late
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/your-repo/instana-tracer.git
-   cd instana-tracer
-   
-2. **Build the project**:
+   cd instana-master
+
+2. **Build the project (or use maven wrapper)**:
    ```sh
-   ./mvnw clean install
+   mvn clean install
 
-2. **Running the Project**
+3. **Running the Project**
 
-   To run the project with a list of input files (comma-separated), use the following command:
+   To run the project, put input files in the project's source directory (comma-separated values related to the
+   project's directory), use the following command:
    ```sh
    java -cp target/instana.jar InstanaTracer input1.txt,input2.txt
+
+4. **(OPTIONAL) Running the Project in Intellij IDEA**
+
+   To run the project in Intellij IDEA, open the project in the IDE and run the `InstanaTracer` class with the
+   appropriate input arguments.
    
 
    

@@ -236,7 +236,6 @@ class InstanaTracerUnitTest {
     void shouldReturnNumberOfTracesWithMaxLatency_whenTask10(String fileName, Integer expected) {
         tracer.readGraphFromFile("src/test/resources/" + fileName);
         int actual = tracer.countTracesWithMaxLatency("C", 30);
-        System.out.println("Expected: " + expected + " Actual: " + actual);
         assertThat(actual).isEqualTo(expected);
     }
 
